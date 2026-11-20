@@ -1,14 +1,18 @@
-// Writes assets/nowplaying.svg from the latest Last.fm scrobble.
+// Builds the Last.fm card as build/nowplaying.svg, then renders it to
+// assets/nowplaying.png with headless Chrome. The PNG is what the README shows:
+// GitHub serves repo SVGs with a policy that blocks the embedded cover and font.
 // Layout follows the listening card on the personal site home page.
 //
-// Env: LASTFM_API_KEY (required), LASTFM_USER (default "unfgws").
+// Env: LASTFM_API_KEY (required), LASTFM_USER (default "unfgws"), CHROME (browser path).
 // Offline testing: FIXTURE (saved API response), FIXTURE_COVER (local image file).
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
 const user = process.env.LASTFM_USER || "unfgws";
 const key = process.env.LASTFM_API_KEY;
-const out = fileURLToPath(new URL("../assets/nowplaying.svg", import.meta.url));
+const svgOut = fileURLToPath(new URL("../build/nowplaying.svg", import.meta.url));
+const pngOut = fileURLToPath(new URL("../assets/nowplaying.png", import.meta.url));
 const PLACEHOLDER = "2a96cbd8b46e442fc41c2b86b821562f"; // Last.fm's "no art" image
 
 const widths = JSON.parse(await readFile(new URL("./inter-widths.json", import.meta.url), "utf8"));
@@ -194,5 +198,25 @@ if (!track) {
   });
 }
 
-await writeFile(out, svg);
-console.log("wrote", out, `(${Buffer.byteLength(svg)} bytes)`);
+await mkdir(new URL("../build/", import.meta.url), { recursive: true });
+await writeFile(svgOut, svg);
+
+const height = Math.ceil(Number(svg.match(/viewBox="0 0 416 ([\d.]+)"/)[1]));
+const chrome = process.env.CHROME || "google-chrome";
+execFileSync(
+  chrome,
+  [
+    "--headless=new",
+    "--no-sandbox",
+    "--disable-gpu",
+    "--hide-scrollbars",
+    "--default-background-color=00000000",
+    "--force-device-scale-factor=2",
+    "--virtual-time-budget=3000",
+    `--window-size=416,${height}`,
+    `--screenshot=${pngOut}`,
+    `file://${svgOut}`,
+  ],
+  { stdio: "ignore" },
+);
+console.log("wrote", pngOut);
