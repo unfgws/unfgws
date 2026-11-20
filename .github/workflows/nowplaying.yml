@@ -1,0 +1,38 @@
+name: now-playing
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: now-playing
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build card
+        if: env.LASTFM_API_KEY != ''
+        run: node scripts/nowplaying.mjs
+
+      - name: Commit if changed
+        if: env.LASTFM_API_KEY != ''
+        run: |
+          if git diff --quiet -- assets/nowplaying.svg; then
+            echo "No change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/nowplaying.svg
+          git commit -m "Update now playing"
+          git push

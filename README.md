@@ -1,16 +1,13 @@
-## Hi there 👋
+<p align="center">
+  <img src="assets/header.svg" alt="Saurabh" width="720">
+</p>
 
-<!--
-**unfgws/unfgws** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Playing with stuff. Making things I like.
 
-Here are some ideas to get you started:
+Mostly small web projects: a blog, a physics toy, a page that links to everywhere else I am.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[Website](https://unfgws.pages.dev) &nbsp;/&nbsp; [Find me elsewhere](https://addme-saurb.pages.dev) &nbsp;/&nbsp; [Fun](https://unfgws.github.io/Fun/) &nbsp;/&nbsp; [Last.fm](https://www.last.fm/user/unfgws)
+
+<a href="https://www.last.fm/user/unfgws">
+  <img src="assets/nowplaying.svg" alt="Latest track on Last.fm" width="440">
+</a>
