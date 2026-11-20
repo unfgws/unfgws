@@ -12,14 +12,21 @@ Mostly small web projects: a blog, a physics toy, a page that links to everywher
   <img src="assets/nowplaying.png" alt="Latest track on Last.fm" width="416">
 </a>
 
-## Things I've been making
+---
 
-**01 / Blog**
+<p align="center">
+  <sub>FIELD STUDY / 001</sub>
+</p>
 
-Started as a place to publish things. It slowly grew into a much bigger creative space for articles, notes, series, and a writing setup of my own. Still evolving, and eventually becoming part of **Adverse**.
+<p align="center">
+  <a href="https://unfgws.github.io/Fun/">
+    <img src="assets/experiment-001.svg" alt="String Theory — an interactive experiment in tension, gravity and sound" width="880">
+  </a>
+</p>
 
-**02 / Addme**
-
-A little home for my corners of the internet. Socials, profiles, and the places I show up online — [take a look](https://addme-saurb.pages.dev).
+<p align="center">
+  <i>Drag the letters. Pull until the line gives.</i><br>
+  <a href="https://unfgws.github.io/Fun/">Open the experiment ↗</a>
+</p>
 
 <!-- Codex co-authored -->
