@@ -35,4 +35,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/nowplaying.svg
           git commit -m "Update now playing"
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            echo "Push failed (attempt $attempt), retrying"
+            sleep 5
+          done
+          exit 1
