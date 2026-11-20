@@ -12,21 +12,4 @@ Mostly small web projects: a blog, a physics toy, a page that links to everywher
   <img src="assets/nowplaying.png" alt="Latest track on Last.fm" width="416">
 </a>
 
----
-
-<p align="center">
-  <sub>FIELD STUDY / 001</sub>
-</p>
-
-<p align="center">
-  <a href="https://unfgws.github.io/Fun/">
-    <img src="assets/experiment-001.svg" alt="String Theory — an interactive experiment in tension, gravity and sound" width="880">
-  </a>
-</p>
-
-<p align="center">
-  <i>Drag the letters. Pull until the line gives.</i><br>
-  <a href="https://unfgws.github.io/Fun/">Open the experiment ↗</a>
-</p>
-
 <!-- Codex co-authored -->
