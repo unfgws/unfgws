@@ -4,7 +4,13 @@
 
 Playing with stuff. Making things I like.
 
-A few things I've been building, breaking, and rebuilding.
+Mostly small web projects: a blog, a physics toy, a page that links to everywhere else I am.
+
+[Website](https://unfgws.pages.dev) &nbsp;/&nbsp; [Find me elsewhere](https://addme-saurb.pages.dev) &nbsp;/&nbsp; [Fun](https://unfgws.github.io/Fun/) &nbsp;/&nbsp; [Last.fm](https://www.last.fm/user/unfgws)
+
+<a href="https://www.last.fm/user/unfgws">
+  <img src="assets/nowplaying.png" alt="Latest track on Last.fm" width="416">
+</a>
 
 ## Things I've been making
 
@@ -15,9 +21,3 @@ Started as a place to publish things. It slowly grew into a much bigger creative
 **02 / Addme**
 
 A little home for my corners of the internet. Socials, profiles, and the places I show up online — [take a look](https://addme-saurb.pages.dev).
-
-[Website](https://unfgws.pages.dev) &nbsp;/&nbsp; [Find me elsewhere](https://addme-saurb.pages.dev) &nbsp;/&nbsp; [Fun](https://unfgws.github.io/Fun/) &nbsp;/&nbsp; [Last.fm](https://www.last.fm/user/unfgws)
-
-<a href="https://www.last.fm/user/unfgws">
-  <img src="assets/nowplaying.png" alt="Latest track on Last.fm" width="416">
-</a>
