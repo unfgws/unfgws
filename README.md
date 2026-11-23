@@ -1,8 +1,9 @@
 <p align="center">
   <img src="assets/header.svg" alt="Saurabh" width="720">
 </p>
-
-I am  here just for fun ,as long as I enjoy i build some stuff .
+Well , Hey 🐼
+I am saurabh .
+N I'm  here just for fun ,as long as I enjoy ,I build/create some stuff .
 
 well, nah I'm not a coder,I understand maybe basic html & css .
 But I have alot of ideas/projects this i use codex/claude-code/antigravity to help me out with stuff I need .
