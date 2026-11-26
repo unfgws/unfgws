@@ -17,4 +17,10 @@ I have been lately working on my addme project (https://addme-saurb.pages.dev/mi
   <img src="assets/nowplaying.png" alt="Latest track on Last.fm" width="416">
 </a>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="light_mode.svg" />
+  <img alt="unfgws GitHub profile as ASCII" src="dark_mode.svg" width="100%" />
+</picture>
+
 Always happy to connect with people ,learn new stuff.
