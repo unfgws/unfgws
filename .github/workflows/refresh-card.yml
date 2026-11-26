@@ -38,14 +38,19 @@ jobs:
             "$GH_ASCII_URL/$HANDLE?theme=light" \
             -o light_mode.svg
 
-      - name: Commit only if the card changed
+      - name: Save a dated snapshot and commit
         run: |
+          # Use India time so archive timestamps match the daily schedule.
+          SNAPSHOT_DIR="history/$(TZ=Asia/Kolkata date +'%Y/%m/%d/%H-%M-%S')"
+          mkdir -p "$SNAPSHOT_DIR"
+          cp dark_mode.svg light_mode.svg "$SNAPSHOT_DIR/"
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dark_mode.svg light_mode.svg
+          git add dark_mode.svg light_mode.svg "$SNAPSHOT_DIR"
           if git diff --cached --quiet; then
-            echo "Card unchanged — nothing to commit."
+            echo "Card and snapshot unchanged — nothing to commit."
           else
-            git commit -m "chore: refresh gh-ascii card"
+            git commit -m "chore: refresh gh-ascii card and archive snapshot"
             git push
           fi
