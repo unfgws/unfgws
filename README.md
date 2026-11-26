@@ -8,8 +8,9 @@ I am Saurabh.
 
 And I'm here just for fun. As long as I enjoy it, I build/create some stuff.
 
-Well, nah, I'm not a coder. I understand maybe basic HTML & CSS.
-But I have a lot of ideas/projects, so I use Codex/Claude Code/Antigravity to help me out with the stuff I need.
+Well, nah, I'm not a coder.
+But I have a lot of ideas/projects, so I use Cli agents to help me out with code part while I deal with ideas/references ,I wrote about it on my addme website blog.  
+
 
 Lately, I have been working on my Addme project (https://addme-saurb.pages.dev/misfit).
 
