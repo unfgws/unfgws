@@ -1,15 +1,17 @@
 <p align="center">
   <img src="assets/header.svg" alt="Saurabh" width="720">
 </p>
-Well , Hey 🐼
-I am saurabh .
-N I'm  here just for fun ,as long as I enjoy ,I build/create some stuff .
 
-well, nah I'm not a coder,I understand maybe basic html & css .
-But I have alot of ideas/projects this i use codex/claude-code/antigravity to help me out with stuff I need .
+Well, hey 🐼
 
+I am Saurabh.
 
-I have been lately working on my addme project (https://addme-saurb.pages.dev/misfit)
+And I'm here just for fun. As long as I enjoy it, I build/create some stuff.
+
+Well, nah, I'm not a coder. I understand maybe basic HTML & CSS.
+But I have a lot of ideas/projects, so I use Codex/Claude Code/Antigravity to help me out with the stuff I need.
+
+Lately, I have been working on my Addme project (https://addme-saurb.pages.dev/misfit).
 
 [Website](https://unfgws.pages.dev) &nbsp;/&nbsp; [Find me elsewhere](https://addme-saurb.pages.dev) &nbsp;/&nbsp; [Fun](https://unfgws.github.io/Fun/) &nbsp;/&nbsp; [Last.fm](https://www.last.fm/user/unfgws)
 
@@ -23,4 +25,4 @@ I have been lately working on my addme project (https://addme-saurb.pages.dev/mi
   <img alt="unfgws GitHub profile as ASCII" src="dark_mode.svg" width="100%" />
 </picture>
 
-Always happy to connect with people ,learn new stuff.
+I'm always happy to connect with people and learn new stuff.
